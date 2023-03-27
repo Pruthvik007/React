@@ -1,0 +1,42 @@
+export const data = [
+  {
+    taskId: 1,
+    taskName: "task1",
+    taskDescription: "taskDescription1",
+    taskDate: "taskDate1",
+    dateCreated: "dateCreated1",
+    taskStatus: "taskStatus1",
+  },
+  {
+    taskId: 2,
+    taskName: "task2",
+    taskDescription: "taskDescription2",
+    taskDate: "taskDate2",
+    dateCreated: "dateCreated2",
+    taskStatus: "taskStatus2",
+  },
+  {
+    taskId: 3,
+    taskName: "task3",
+    taskDescription: "taskDescription3",
+    taskDate: "taskDate3",
+    dateCreated: "dateCreated3",
+    taskStatus: "taskStatus3",
+  },
+  {
+    taskId: 4,
+    taskName: "task4",
+    taskDescription: "taskDescription4",
+    taskDate: "taskDate4",
+    dateCreated: "dateCreated4",
+    taskStatus: "taskStatus4",
+  },
+  {
+    taskId: 5,
+    taskName: "task5",
+    taskDescription: "taskDescription5",
+    taskDate: "taskDate5",
+    dateCreated: "dateCreated5",
+    taskStatus: "taskStatus5",
+  },
+];

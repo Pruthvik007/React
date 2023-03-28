@@ -2,7 +2,7 @@ import React from 'react'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import About from './task-list-app/components/About';
 import List from './task-list-app/components/List';
-import Task from './task-list-app/components/Task';
+import ViewOrUpdateTask from './task-list-app/components/ViewOrUpdateTask';
 import AddTask from './task-list-app/components/AddTask';
 import Header from './task-list-app/components/common/Header';
 const Router = () => {
@@ -14,7 +14,7 @@ const Router = () => {
           <Route path="/" element={<List />}></Route>
           <Route path="/tasksList" element={<List />}></Route>
           <Route path="/addTask" element={<AddTask />}></Route>
-          <Route path="/task/:isEditMode" element={<Task />}></Route>
+          <Route path="/task/:isEditMode" element={<ViewOrUpdateTask />}></Route>
         </Routes>
       </BrowserRouter>
   )

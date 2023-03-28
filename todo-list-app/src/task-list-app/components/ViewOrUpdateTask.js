@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router";
 import BackButton from "./common/BackButton";
 import Input from "./common/Input";
+import Heading from "./common/Heading"
 const Task = () => {
   let initialTask = useSelector((state) => {
     return state.task;
@@ -33,7 +34,7 @@ const Task = () => {
 
   return (
     <div>
-      Task
+      {isEditMode==="1" ? <Heading heading={"Update Task"}/> : <Heading heading={"Task Details"}/>}
       <div className="d-flex align-items-center justify-content-center">
         <br />
         <div className="">

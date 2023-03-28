@@ -3,6 +3,7 @@ import Input from "./common/Input";
 import ToDoActions from "../redux/actions/ToDoActions";
 import { useNavigate } from "react-router";
 import BackButton from "./common/BackButton";
+import Heading from "./common/Heading"
 const AddTask = () => {
   const navigate = useNavigate();
   const toDoActions = ToDoActions();
@@ -20,7 +21,7 @@ const AddTask = () => {
   };
   return (
     <div>
-      AddTask
+      <Heading heading={"Add Task"}/>
       <div className="d-flex flex-column align-items-center justify-content-center">
         <Input
           type="text"

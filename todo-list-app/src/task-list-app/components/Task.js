@@ -12,9 +12,7 @@ const Task = () => {
   let { isEditMode } = useParams();
   const toDoActions = ToDoActions();
   const navigate = useNavigate();
-  const [task, setTask] = useState(
-    initialTask ? initialTask : { taskName: "" }
-  );
+  const [task, setTask] = useState(initialTask);
   const addTask = () => {
     toDoActions.addTask(task);
     navigate("/tasksList");
@@ -39,17 +37,18 @@ const Task = () => {
       <div className="d-flex align-items-center justify-content-center">
         <br />
         <div className="">
-        <Input
+          <Input
             type="text"
-            disabled={isEditMode == 0}
+            disabled={isEditMode === "0"}
             label={"Task Name"}
             placeholder="Enter Task Name"
             value={task.taskName}
             onChange={onTaskChange}
-          /><br/>
+          />
+          <br />
           <Input
             type="text"
-            disabled={isEditMode == 0}
+            disabled={isEditMode === "0"}
             label={"Task Description"}
             placeholder="Enter Task Description"
             value={task.taskDescription}
@@ -57,7 +56,7 @@ const Task = () => {
           />
           <br />
           <div className="d-flex align-items-center justify-content-center">
-            {isEditMode == 1 && (
+            {isEditMode === "1" && (
               <button
                 className="btn btn-sm btn-primary"
                 onClick={() => {
@@ -77,7 +76,8 @@ const Task = () => {
               >
                 Add Task
               </button>
-            )}
+            )}{" "}
+            &nbsp;&nbsp;
             <BackButton link="/tasksList" />
           </div>
         </div>

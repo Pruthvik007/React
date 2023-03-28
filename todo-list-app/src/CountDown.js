@@ -9,7 +9,7 @@ const CountDown = () => {
 
   const updateCount = () => {
     const interval = setInterval(() => {
-      setSeconds(seconds - 1);
+      setSeconds(seconds=>seconds-1);
     }, 1000);
     if (seconds === 0) {
       clearInterval(interval);

@@ -1,5 +1,6 @@
 import { data } from "../../../utils/tasksData";
-const listReducer = (state = [], action) => {
+
+const ListReducer = (state = [], action) => {
   let todos;
   switch (action.type) {
     case "ADD":
@@ -39,4 +40,4 @@ const listReducer = (state = [], action) => {
   }
 };
 
-export default listReducer;
+export default ListReducer;

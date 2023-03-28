@@ -1,9 +1,11 @@
-import React from 'react'
+import { React } from "../../../utils/Imports";
 
-const Heading = ({heading}) => {
+const Heading = ({ heading }) => {
   return (
-    <div className="p-2"><h3>{heading}</h3></div>
-  )
-}
+    <div className="p-2">
+      <h3>{heading}</h3>
+    </div>
+  );
+};
 
-export default Heading
+export default Heading;

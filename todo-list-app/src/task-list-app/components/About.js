@@ -1,4 +1,4 @@
-import React from 'react'
+import React from '../../utils/Imports';
 
 const About = () => {
   return (

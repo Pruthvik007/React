@@ -1,9 +1,5 @@
-const taskReducer = (state = {}, action) => {
+const TaskReducer = (state = {}, action) => {
   switch (action.type) {
-    case "ADD_TODO":
-      return state;
-    case "UPDATE_TODO":
-      return action.payload;
     case "SET_TASK":
       return action.payload;
     default:
@@ -11,4 +7,4 @@ const taskReducer = (state = {}, action) => {
   }
 };
 
-export default taskReducer;
+export default TaskReducer;

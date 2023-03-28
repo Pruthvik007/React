@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import { Link, React } from "../../../utils/Imports"
 
 const Header = () => {
   return (

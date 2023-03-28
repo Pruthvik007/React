@@ -1,7 +1,15 @@
-import React from "react";
-const Input = ({ onChange, regex, value, type, placeholder, label,disabled }) => {
-  const handleChange = (fieldName,e) => {
-    onChange(fieldName,e.target.value);
+import { React } from "../../../utils/Imports";
+const Input = ({
+  onChange,
+  regex,
+  value,
+  type,
+  placeholder,
+  label,
+  disabled,
+}) => {
+  const handleChange = (fieldName, e) => {
+    onChange(fieldName, e.target.value);
   };
   return (
     <div className="form-floating">
@@ -11,7 +19,7 @@ const Input = ({ onChange, regex, value, type, placeholder, label,disabled }) =>
         placeholder={placeholder}
         type={type}
         onChange={(e) => {
-          handleChange(label,e);
+          handleChange(label, e);
         }}
         value={value}
         disabled={disabled}

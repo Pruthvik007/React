@@ -1,6 +1,6 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { React, BrowserRouter, Routes, Route } from "./utils/Imports";
 import { Header, AddTask, ViewOrUpdateTask, List, About } from "./utils/Imports";
+
 const Router = () => {
   return (
     <BrowserRouter basename={process.env.PUBLIC_URL}>

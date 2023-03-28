@@ -1,5 +1,4 @@
-import React from "react";
-import { useNavigate } from "react-router";
+import { useNavigate, React } from "../../../utils/Imports";
 
 const BackButton = ({ link }) => {
   const navigate = useNavigate();

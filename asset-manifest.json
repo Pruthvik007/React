@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/React/static/css/main.89013c15.css",
-    "main.js": "/React/static/js/main.1e0017ae.js",
+    "main.css": "/React/static/css/main.b4120cbe.css",
+    "main.js": "/React/static/js/main.130ad352.js",
     "static/js/787.b6086cd3.chunk.js": "/React/static/js/787.b6086cd3.chunk.js",
     "static/media/bootstrap-icons.woff?": "/React/static/media/bootstrap-icons.6959d0d983ee318f8880.woff",
     "static/media/bootstrap-icons.woff2?": "/React/static/media/bootstrap-icons.b2e5aab643c6f0fd2da6.woff2",
     "index.html": "/React/index.html",
-    "main.89013c15.css.map": "/React/static/css/main.89013c15.css.map",
-    "main.1e0017ae.js.map": "/React/static/js/main.1e0017ae.js.map",
+    "main.b4120cbe.css.map": "/React/static/css/main.b4120cbe.css.map",
+    "main.130ad352.js.map": "/React/static/js/main.130ad352.js.map",
     "787.b6086cd3.chunk.js.map": "/React/static/js/787.b6086cd3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.89013c15.css",
-    "static/js/main.1e0017ae.js"
+    "static/css/main.b4120cbe.css",
+    "static/js/main.130ad352.js"
   ]
 }

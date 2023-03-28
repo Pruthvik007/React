@@ -1,9 +1,18 @@
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Router from "./Router";
+export const ThemeContext = React.createContext();
 function App() {
+  const [isDarkTheme, setDarkTheme] = useState(true);
+  useEffect(()=>{
+    console.log("isDarkTheme",isDarkTheme);
+  },[isDarkTheme])
+
   return (
-    <div className="App">
-      <Router/>
+    <div className={"App " + (isDarkTheme ? "dark-theme" : "light-theme")}>
+      <ThemeContext.Provider value={{ isDarkTheme, setDarkTheme }}>
+        <Router />
+      </ThemeContext.Provider>
     </div>
   );
 }

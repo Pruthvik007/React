@@ -47,3 +47,15 @@
     flex-direction: row !important;
   }
 }
+
+.dark-theme{
+  background-color: #131415;
+}
+
+.dark-theme nav{
+  background-color: #1e1f22;
+}
+
+.light-theme{
+  background-color: #ffffff;
+}

@@ -1,5 +1,11 @@
-import { useEffect, useState, useSelector, useNavigate } from "../../utils/Imports";
+import {
+  useEffect,
+  useState,
+  useSelector,
+  useNavigate,
+} from "../../utils/Imports";
 import { Heading, ToDoActions } from "../../utils/Imports";
+import Filter from "./common/Filter";
 
 const List = () => {
   const navigate = useNavigate();
@@ -8,8 +14,9 @@ const List = () => {
   let data = useSelector((state) => {
     return state.tasks;
   });
+
   useEffect(() => {
-    setTasks(data);
+    setTasks(data.map((task)=>Object.assign({},task)));
   }, [data]);
 
   const deleteTask = (taskId) => {
@@ -21,9 +28,20 @@ const List = () => {
     navigate(`/task/${isViewMode}`);
   };
 
+  const filterData = (searchText) => {
+    if (!searchText) {
+      setTasks(data.map((task)=>Object.assign({},task)));
+    } else {
+      setTasks(data.map((task)=>Object.assign({},task)).filter((task) => searchText.includes(task.taskName)));
+    }
+  };
+
   return (
     <div className="p-2">
-      <Heading heading={"List Of Tasks"} />
+      <div className="d-flex flex-row justify-content-center">
+        <Heading heading={"List Of Tasks"} />
+        <Filter filterData={filterData} />
+      </div>
       <table className="table">
         <thead className="thead-dark">
           <tr>

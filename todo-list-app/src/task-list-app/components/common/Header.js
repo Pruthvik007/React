@@ -17,8 +17,8 @@ const Header = () => {
         </button>
       </nav>
       <div className="navbar-expand-md collapse navbar-collapse" id="navbarNav">
-        <div className="d-flex flex-row">
-          <ul className="nav navbar-nav mr-auto d-flex flex-row">
+        <div className="header-items">
+          <ul className="nav navbar-nav mr-auto header-list">
             <li className="nav-item active pl-3 pr-3">
               <Link className="nav-link" to="/">
                 React
@@ -35,23 +35,7 @@ const Header = () => {
               </Link>
             </li>
           </ul>
-          <ul className="nav navbar-nav ml-auto d-flex flex-row">
-            <form className="form-inline pl-3 pr-3">
-              <input
-                className="form-control mr-sm-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-                disabled
-              />
-              <button
-                className="btn btn-outline-success my-2 my-sm-0"
-                type="submit"
-                disabled
-              >
-                Search
-              </button>
-            </form>
+          <ul className="nav navbar-nav ml-auto header-list">
             <li className="nav-item active pl-3 pr-3">
               <Link className="nav-link" to="/about">
                 About

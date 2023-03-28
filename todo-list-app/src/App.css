@@ -36,3 +36,14 @@
     transform: rotate(360deg);
   }
 }
+
+@media screen and (min-width: 405px) {
+  .header-items {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+  .header-list {
+    display: flex !important;
+    flex-direction: row !important;
+  }
+}

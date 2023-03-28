@@ -1,13 +1,10 @@
 import React, { useState } from "react";
-import Input from "./common/Input";
-import ToDoActions from "../redux/actions/ToDoActions";
 import { useNavigate } from "react-router";
-import BackButton from "./common/BackButton";
-import Heading from "./common/Heading"
+import { Heading, BackButton, Input, ToDoActions } from "../../utils/Imports";
 const AddTask = () => {
   const navigate = useNavigate();
   const toDoActions = ToDoActions();
-  const [task, setTask] = useState({taskName:"",taskDescription:""});
+  const [task, setTask] = useState({ taskName: "", taskDescription: "" });
   const addTask = () => {
     toDoActions.addTask(task);
     navigate("/tasksList");
@@ -21,7 +18,7 @@ const AddTask = () => {
   };
   return (
     <div>
-      <Heading heading={"Add Task"}/>
+      <Heading heading={"Add Task"} />
       <div className="d-flex flex-column align-items-center justify-content-center">
         <Input
           type="text"
@@ -40,7 +37,7 @@ const AddTask = () => {
           value={task.taskDescription}
           onChange={onTaskChange}
         />
-        <br/>
+        <br />
         <div className="d-flex flex-row">
           <button className="btn btn-sm btn-primary" onClick={addTask}>
             Add Task

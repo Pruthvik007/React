@@ -1,11 +1,8 @@
 import React, { useState } from "react";
-import ToDoActions from "../redux/actions/ToDoActions";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useParams } from "react-router";
-import BackButton from "./common/BackButton";
-import Input from "./common/Input";
-import Heading from "./common/Heading"
+import { Heading, Input, BackButton, ToDoActions } from "../../utils/Imports";
 const Task = () => {
   let initialTask = useSelector((state) => {
     return state.task;
@@ -34,9 +31,12 @@ const Task = () => {
 
   return (
     <div>
-      {isEditMode==="1" ? <Heading heading={"Update Task"}/> : <Heading heading={"Task Details"}/>}
+      {isEditMode === "1" ? (
+        <Heading heading={"Update Task"} />
+      ) : (
+        <Heading heading={"Task Details"} />
+      )}
       <div className="d-flex align-items-center justify-content-center">
-        <br />
         <div className="">
           <Input
             type="text"

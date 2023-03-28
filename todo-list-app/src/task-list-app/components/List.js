@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
-import ToDoActions from "../redux/actions/ToDoActions";
 import { useNavigate } from "react-router-dom";
-import Heading from "./common/Heading"
+import { Heading, ToDoActions } from "../../utils/Imports";
 const List = () => {
   const navigate = useNavigate();
   const toDoActions = ToDoActions();
@@ -25,7 +24,7 @@ const List = () => {
 
   return (
     <div className="p-2">
-      <Heading heading={"List Of Tasks"}/>
+      <Heading heading={"List Of Tasks"} />
       <table className="table">
         <thead className="thead-dark">
           <tr>

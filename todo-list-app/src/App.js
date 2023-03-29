@@ -4,7 +4,7 @@ import Router from "./Router";
 export const ThemeContext = React.createContext();
 function App() {
 
-  const [isDarkTheme, setDarkTheme] = useState(true);
+  const [isDarkTheme, setDarkTheme] = useState(false);
 
   return (
     <div className={"App " + (isDarkTheme ? "dark-theme" : "light-theme")}>

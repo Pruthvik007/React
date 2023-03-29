@@ -1,10 +1,10 @@
-import { Link, React, useState, useContext } from "../../../utils/Imports";
+import { Link, React, useContext } from "../../../utils/Imports";
 import { ThemeContext } from "../../../App";
 const Header = () => {
   const { isDarkTheme, setDarkTheme } = useContext(ThemeContext);
   return (
     <div>
-      <nav className="navbar navbar-light pl-3">
+      <nav className={"navbar pl-3 " + (isDarkTheme ? "navbar-dark": "navbar-light")}>
         <button
           className="navbar-toggler"
           type="button"
@@ -18,7 +18,7 @@ const Header = () => {
         </button>
         <div>
           <button
-            className="btn btn-outline-dark"
+            className="btn btn-outline-info"
             onClick={() => setDarkTheme((theme) => !theme)}
           >
             {isDarkTheme ? (

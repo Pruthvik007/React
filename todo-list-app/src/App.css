@@ -53,10 +53,23 @@
   background-color: #131415;
 }
 
+.dark-theme table {
+  color: #ffffff !important;
+}
+
 .dark-theme nav {
   background-color: #1e1f22;
 }
 
 .light-theme {
   background-color: #ffffff;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    border:none !important;
+    outline: none !important;
+    box-shadow: none !important;
 }

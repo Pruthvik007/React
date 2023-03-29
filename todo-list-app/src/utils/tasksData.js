@@ -63,12 +63,4 @@ export const data = [
     dateCreated: "dateCreated8",
     taskStatus: "taskStatus8",
   },
-  {
-    taskId: 9,
-    taskName: "task9",
-    taskDescription: "taskDescription9",
-    taskDate: "taskDate9",
-    dateCreated: "dateCreated9",
-    taskStatus: "taskStatus9",
-  },
 ];

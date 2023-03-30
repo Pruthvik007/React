@@ -22,9 +22,9 @@ const Header = () => {
             onClick={() => setDarkTheme((theme) => !theme)}
           >
             {isDarkTheme ? (
-              <i class="bi bi-toggle-on"></i>
+              <i className="bi bi-toggle-on"></i>
             ) : (
-              <i class="bi bi-toggle-off"></i>
+              <i className="bi bi-toggle-off"></i>
             )}
           </button>
         </div>

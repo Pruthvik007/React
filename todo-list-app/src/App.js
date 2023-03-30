@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { React, useState } from "./utils/Imports";
 import "./App.css";
 import Router from "./Router";
 export const ThemeContext = React.createContext();

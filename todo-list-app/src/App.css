@@ -57,8 +57,16 @@
   color: #ffffff !important;
 }
 
-.dark-theme nav {
-  background-color: #1e1f22;
+.dark-theme nav input {
+  background-color: #1e1f22 !important;
+}
+
+.dark-theme input {
+  background-color: #1e1f22 !important;
+}
+
+.dark-theme input {
+  color: #ffffff !important;
 }
 
 .light-theme {
